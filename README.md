@@ -1,6 +1,10 @@
 ## Use
   - NextJS
   - Tailwindcss
+
+## What's in my folder
+  - core:
+    - Dominio da minha aplicação
 ## Getting Started
 
 First, run the development server:
