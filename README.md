@@ -1,4 +1,4 @@
-# NEXT CRUD
+# [NEXT CRUD](https://next-crud-six.vercel.app/)
 
 Hello everyone, this is a project that I learned from [COD3R](https://youtu.be/HJN5rX-3SDM).
 
