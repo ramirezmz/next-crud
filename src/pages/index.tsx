@@ -38,7 +38,7 @@ export default function Home() {
         <Formulario 
         client={client}
         clientChange={saveClient}
-        cancelado={() => showTable}
+        cancelado={showTable}
         />
       )}
       

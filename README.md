@@ -1,10 +1,36 @@
-## Use
-  - NextJS
-  - Tailwindcss
+# NEXT CRUD
 
-## What's in my folder
-  - core:
-    - Dominio da minha aplicação
+Hello everyone, this is a project that I learned from [COD3R](https://youtu.be/HJN5rX-3SDM).
+
+It's about CRUD, for those who dont't know CRUD is the composition of the first letter of 4 basic functions of a system that works with a database.
+* C = Create
+* R = Read
+* U = Update
+* D = Delete
+  
+
+## What I learned with this project
+  * NextJS
+  * Tailwindcss
+  * React hooks
+  * Environment setup of the project
+  * Typecript
+
+
+## How is the result of the project
+
+### Add client
+
+![Add client](public/add-client.gif)
+
+
+### Modifying client
+
+![Modifying client](public/mod-client.gif)
+
+### Remove Client
+![Remove client](public/remove-client.gif)
+
 ## Getting Started
 
 First, run the development server:
@@ -12,7 +38,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
+yarn run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
