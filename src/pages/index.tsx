@@ -2,6 +2,8 @@ import Layout from "../components/Layout"
 import Table from "../components/Table"
 import Client from "../core/Client"
 import Botao from "../components/Botao"
+import Formulario from "../components/Formulario"
+import { useState } from "react"
 
 export default function Home() {
 
@@ -19,6 +21,11 @@ export default function Home() {
   function clientExclude(client: Client){
     console.log(`Excluir ... ${client.name}`)
  }
+ 
+  function saveClient(client: Client){
+    console.log(client)
+  }
+ const [ visivel, setVisivel ] = useState <'table' | 'form'>('table')
 
   return (
   <div className={`
@@ -27,13 +34,27 @@ export default function Home() {
     text-white
   `}>
     <Layout title="Cadastro Simple">
-      <div className="flex justify-end">
-        <Botao cor="green" className="mb-4">Novo Cliente</Botao>
-      </div>
-      <Table clients={clients} 
-      clientSelect={clientSelect}
-      clientExclude={clientExclude}
-      />
+      {visivel === "table" ? (
+        <>
+          <div className="flex justify-end">
+            <Botao cor="green" className="mb-4"
+            onClick={() => setVisivel('form')}
+            >Novo Cliente</Botao>
+          </div>
+          <Table clients={clients} 
+          clientSelect={clientSelect}
+          clientExclude={clientExclude}
+          />
+        </>
+      ) : (
+        <Formulario 
+        client={clients[1]}
+        clientChange={saveClient}
+        cancelado={() => setVisivel('table')}
+        />
+      )}
+      
+      
     </Layout>
   </div>
   )
