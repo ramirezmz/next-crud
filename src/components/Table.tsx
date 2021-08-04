@@ -27,9 +27,9 @@ export default function Table(props: TableProps) {
       return (
         <tr key={Client.id}
           className={`${i % 2 === 0 ? 'bg-purple-200' : 'bg-purple-100'}`}>
-          <td className="text-left pt-4">{Client.id}</td>
-          <td className="text-left pt-4">{Client.name}</td>
-          <td className="text-left pt-4">{Client.age}</td>
+          <td className="text-left pt-4 px-2">{Client.id}</td>
+          <td className="text-left pt-4 px-2">{Client.name}</td>
+          <td className="text-left pt-4 px-2">{Client.age}</td>
           {exibirAcoes ? renderizarAcoes(Client) : false}
         </tr>
       )
